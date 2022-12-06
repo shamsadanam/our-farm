@@ -1,0 +1,15 @@
+.header-top{
+  padding: 3px 0;
+  background-color: var(--clr-primary-light-1);
+  color: var(--clr-white);
+  font-size: 1.4rem;
+
+  & .inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__link{
+    color: var(--clr-white);
+    font-size: 1.4rem;
+  }
+}
