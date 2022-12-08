@@ -1,11 +1,10 @@
-:root{
-  --clr-primary: #037F2F;
-  --clr-primary-light-1: #0DB04B;
-  --clr-primary-light-2: #8BC53F;
+$clr-primary: #037f2f;
+$clr-primary-light-1: #0db04b;
+$clr-primary-light-2: #8bc53f;
 
-  --clr-accent: #FFA51E;
-  
-  --clr-black: #000;
-  --clr-grey: #333333;
-  --clr-white: #fff;
-}
+$clr-accent: #ffa51e;
+
+$clr-black: #000;
+$clr-grey: #333333;
+$clr-white: #fff;
+$clr-light-grey: #c8c8c8;
