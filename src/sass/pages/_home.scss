@@ -1,0 +1,53 @@
+.main {
+  background-image: linear-gradient(
+      to right,
+      rgba($clr-primary, 0.3),
+      rgba($clr-primary, 0.3)
+    ),
+    url("../images/home-hero-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  // height: 576px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 6.8rem;
+  @include respondMax(1024px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  @include respondMax(576px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &__title {
+    font-size: 5.4rem;
+    color: $clr-white;
+    font-weight: 700;
+    margin-bottom: 13px;
+  }
+  &__para {
+    font-size: 1.8rem;
+    color: $clr-white;
+    margin-bottom: 8rem;
+  }
+}
+
+.category {
+  padding-top: 3.2rem;
+  padding-bottom: 2.4rem;
+
+  &__title {
+    margin-bottom: 2.4rem;
+  }
+}
+
+.featured {
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+}

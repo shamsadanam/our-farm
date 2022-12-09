@@ -13,9 +13,11 @@
       type="text/css"
       href="/css/bootstrap-utilities.min.css"
     />
+    <link rel="stylesheet" type="text/css" href="/css/slick.css" />
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="header-top">
         <div class="container-lg d-flex justify-content-between">
@@ -105,7 +107,118 @@
         </div>
       </nav>
     </header>
+    <!-- home-hero-banner -->
+    <main class="main">
+      <div>
+        <h1 class="main__title">FROM OUR FARM <br />TO YOUR FAMILY</h1>
+        <p class="main__para">
+          From our farm to your table we ensure proper quality checks are done
+          at each stage so you get the best quality food.
+        </p>
+      </div>
+      <a href="#" class="fbtn-main">Shop Now</a>
+    </main>
+    <!-- category-section -->
+    <section class="category">
+      <div class="container-lg">
+        <h1 class="title__section category__title text-center">Catagory</h1>
+        <div class="cat-slider d-flex align-items-center">
+          <div>
+            <div class="cat-card">
+              <img
+                src="images/Chicken-Snacks.jpg"
+                alt="Chicken-Snacks"
+                class="cat-card__img"
+              />
+              <h2 class="cat-card__title">Chicken Snacks</h2>
+            </div>
+          </div>
+          <div>
+            <div class="cat-card">
+              <img
+                src="images/Beef-Snacks.jpg"
+                alt="Beef-Snacks"
+                class="cat-card__img"
+              />
+              <h2 class="cat-card__title">Beef Snacks</h2>
+            </div>
+          </div>
+          <div>
+            <div class="cat-card">
+              <img
+                src="images/Ethnic-Snacks.jpg"
+                alt="Ethnic-Snacks"
+                class="cat-card__img"
+              />
+              <h2 class="cat-card__title">Ethnic Snacks</h2>
+            </div>
+          </div>
+          <div>
+            <div class="cat-card">
+              <img
+                src="images/Processed-Chicken.jpg"
+                alt="Processed-Chicken"
+                class="cat-card__img"
+              />
+              <h2 class="cat-card__title">Processed Chicken</h2>
+            </div>
+          </div>
+          <div>
+            <div class="cat-card">
+              <img
+                src="images/Processed-Beef.jpg"
+                alt="Processed-Beef"
+                class="cat-card__img"
+              />
+              <h2 class="cat-card__title">Processed Beef</h2>
+            </div>
+          </div>
+          <div>
+            <div class="cat-card">
+              <img src="images/Egg.jpg" alt="Egg" class="cat-card__img" />
+              <h2 class="cat-card__title">Egg</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured-products -->
+    <section class="featured">
+      <div class="container-lg">
+        <h1 class="title__section text-center featured__title">
+          Featured Product
+        </h1>
+        <div class="featured-slider d-flex align-items-center">
+          <div>
+            <div class="product">
+              <img
+                src="images/BEEF T-BONE STEAK.jpg"
+                alt="beef-t-bone-steak"
+                class="product__img"
+              />
+              <h2 class="product__name">BEEF T-BONE STEAK</h2>
+              <div class="product__cat">Processed Beef</div>
+              <div class="product__weight">500 gm</div>
+              <div>
+                <div class="product__count">
+                  <span class="product__remove">-</span>
+                  <span>1</span>
+                  <span class="product__add">+</span>
+                </div>
+                <img src="images/equal-sign.png" alt="equal" />
+                <div class="product__price">
+                  <span class="product__price-original">1350</span>
+                  <span class="product__price-sale">1080</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="/scripts/jquery-3.6.1.min.js"></script>
     <script src="/scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
     <script src="/scripts/main.js"></script>
   </body>
 </html>

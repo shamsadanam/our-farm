@@ -22,3 +22,18 @@
     color: $clr-white;
   }
 }
+
+.fbtn-main {
+  padding: 0.9rem 3.8rem;
+  border-radius: 3.2rem;
+  font-size: 4.4rem;
+  font-weight: 700;
+  background-color: $clr-primary-light-2;
+  color: $clr-white;
+
+  &:visited,
+  &:hover,
+  &:active {
+    color: $clr-white;
+  }
+}

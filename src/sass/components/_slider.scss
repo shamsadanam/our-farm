@@ -1,0 +1,11 @@
+.cat-slider {
+  & .slick-list {
+    width: 100%;
+    // padding: 0 15% 0 0 !important;
+    & .slick-track {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
