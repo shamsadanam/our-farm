@@ -1,0 +1,58 @@
+.product {
+  border-radius: 2.4rem;
+  position: relative;
+
+  &__img {
+  }
+  &__name {
+  }
+  &__cat {
+  }
+  &__weight {
+  }
+  &__count {
+  }
+  &__add {
+  }
+  &__remove {
+  }
+  &__price {
+  }
+  &__price-original {
+  }
+  &__price-current {
+  }
+  &__add-btn {
+  }
+  &__buy-btn {
+  }
+  &__discount {
+    position: absolute;
+    top: 4.1rem;
+    left: 0;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    border-radius: 0 12px 12px 0;
+    background-color: $clr-primary;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $clr-white;
+  }
+  &__hotel-class {
+    position: absolute;
+    top: 4.1rem;
+    right: 0;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.6rem;
+    border-radius: 12px 0 0 12px;
+    background-color: $clr-primary;
+
+    & svg path {
+      fill: $clr-accent;
+    }
+  }
+}

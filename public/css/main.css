@@ -223,8 +223,37 @@ a:hover, a:active, a:visited {
   justify-content: space-between;
 }
 
-.featured-card {
+.product {
   border-radius: 2.4rem;
+  position: relative;
+}
+.product__discount {
+  position: absolute;
+  top: 4.1rem;
+  left: 0;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  border-radius: 0 12px 12px 0;
+  background-color: #037f2f;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+.product__hotel-class {
+  position: absolute;
+  top: 4.1rem;
+  right: 0;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1.6rem;
+  border-radius: 12px 0 0 12px;
+  background-color: #037f2f;
+}
+.product__hotel-class svg path {
+  fill: #ffa51e;
 }
 
 .main {
