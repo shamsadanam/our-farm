@@ -57,3 +57,101 @@
     max-width: 312px;
   }
 }
+
+.footer {
+  margin-top: 16.9rem;
+  padding-top: 4.8rem;
+  & .container-xxl {
+    max-width: 1700px;
+  }
+
+  @include respondMax(1024px) {
+    margin-top: 5rem;
+  }
+  @include respondMax(991px) {
+    margin-left: 0;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: $clr-grey;
+  }
+
+  &__col-logo {
+    max-width: 15rem;
+    text-align: center;
+    @include respondMax(991px) {
+      margin-left: 1.5rem;
+      margin-inline: auto;
+    }
+  }
+
+  &__logo {
+    max-width: 13.7rem;
+    margin-bottom: 3.9rem;
+  }
+  &__download-links {
+    margin-bottom: 2.9rem;
+  }
+  &__playstore {
+    // margin-bottom: ;
+  }
+  &__appstore {
+  }
+  &__about {
+    border-bottom: 1px solid $clr-black;
+    padding: 0 1.5rem 1.5rem;
+    .footer__title {
+      margin-bottom: 4rem;
+    }
+  }
+  &__para {
+    color: $clr-grey;
+    font-size: 1.4rem;
+  }
+  &__menu {
+    padding: 4.4rem 1.5rem 0;
+    & .footer__title {
+      margin-bottom: 1.8rem;
+      & span {
+        border-bottom: 1px solid $clr-grey;
+      }
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__col-contact {
+    max-width: 24rem;
+    margin-left: auto;
+
+    @include respondMax(991px) {
+      margin-left: 1.5rem;
+    }
+
+    & li {
+      text-align: right;
+      margin-bottom: 4.2rem;
+      @include respondMax(991px) {
+        text-align: left;
+      }
+    }
+
+    & a {
+      color: $clr-grey;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  &__bottom {
+    background-color: $clr-black;
+    margin-top: 5rem;
+    padding: 2.6rem 0;
+    text-align: center;
+    color: $clr-white;
+    font-size: 1.6rem;
+  }
+}
