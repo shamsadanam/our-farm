@@ -6,6 +6,7 @@
     max-width: 15rem;
     margin-inline: auto;
     margin-bottom: 1.9rem;
+    transition: all 0.2s ease-in;
 
     @include respondMax(1199px) {
       max-width: 12rem;
@@ -24,5 +25,9 @@
     @include respondMax(567px) {
       font-size: 1.4rem;
     }
+  }
+
+  &:hover img {
+    transform: scale(1.05);
   }
 }

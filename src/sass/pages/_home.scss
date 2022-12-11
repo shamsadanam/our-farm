@@ -50,4 +50,10 @@
   &__title {
     margin-bottom: 1.5rem;
   }
+  & .featured-slider :not(:last-child) {
+    // margin-right: 2.4rem;
+  }
+  & .product {
+    max-width: 312px;
+  }
 }

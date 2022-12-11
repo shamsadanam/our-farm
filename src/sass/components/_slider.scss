@@ -1,11 +1,93 @@
 .cat-slider {
   & .slick-list {
     width: 100%;
-    // padding: 0 15% 0 0 !important;
+    // padding: 0 15% 0 0 !important; if sliderToShow: [fraction-value] doesn't work
+    overflow: visible;
     & .slick-track {
       width: 100%;
       display: flex;
       justify-content: space-between;
     }
+  }
+  a {
+    color: initial;
+  }
+}
+
+.featured-slider,
+.best-slider {
+  margin-bottom: 2.5rem;
+  position: relative;
+  // z-index: 9;
+
+  & .slick-list {
+    width: 100%;
+    // overflow: visible;
+    // margin: 0 -23px;
+  }
+
+  & .slick-track {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  a {
+    color: initial;
+  }
+  .slick-disabled {
+    opacity: 0;
+    pointer-events: none;
+  }
+  & .slick-prev,
+  & .slick-next {
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7.2rem;
+    height: 7.2rem;
+    border-radius: 50%;
+    background-color: $clr-light-grey-2;
+    // background-color: red;
+    display: grid;
+    place-items: center;
+    pointer-events: visible;
+    visibility: visible;
+
+    @include respondMax(1024px) {
+      width: 5rem;
+      height: 5rem;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  & .slick-prev {
+    z-index: 9;
+    left: -72px;
+
+    @include respondMax(1024px) {
+      top: -50px;
+      left: 0;
+    }
+  }
+  & .slick-next {
+    right: -60px;
+
+    @include respondMax(1366px) {
+      right: -10px;
+    }
+    @include respondMax(1024px) {
+      right: -30px;
+      @include respondMax(1024px) {
+        top: -50px;
+        right: 0;
+      }
+    }
+  }
+  & .slick-slide {
+    // z-index: 2;
+    margin-right: 24px;
+    padding-bottom: 7px;
   }
 }
