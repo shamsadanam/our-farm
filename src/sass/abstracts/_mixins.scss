@@ -30,6 +30,10 @@
   align-items: center;
 }
 
+@mixin gridCenter {
+  display: grid;
+  place-items: center;
+}
 @mixin respondBetween($min, $max) {
   @media only screen and (min-width: $min) and (max-width: $max) {
     @content;

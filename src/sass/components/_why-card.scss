@@ -1,0 +1,26 @@
+.why-card {
+  min-height: 32rem;
+  background-color: $clr-primary;
+  border-radius: 2.4rem;
+  padding: 17px 12px 10px 12px;
+  color: $clr-white;
+
+  @include respondMax(1024px) {
+    min-height: 34.1rem;
+  }
+
+  @include gridCenter;
+  text-align: center;
+
+  &__img {
+    margin-bottom: 17px;
+  }
+  &__title {
+    margin-bottom: 11px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  &__para {
+    font-size: 1.8rem;
+  }
+}

@@ -558,6 +558,33 @@ a:hover, a:active, a:visited {
   color: #fff;
 }
 
+.why-card {
+  min-height: 32rem;
+  background-color: #037f2f;
+  border-radius: 2.4rem;
+  padding: 17px 12px 10px 12px;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  .why-card {
+    min-height: 34.1rem;
+  }
+}
+.why-card__img {
+  margin-bottom: 17px;
+}
+.why-card__title {
+  margin-bottom: 11px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.why-card__para {
+  font-size: 1.8rem;
+}
+
 .main {
   background-image: linear-gradient(to right, rgba(3, 127, 47, 0.3), rgba(3, 127, 47, 0.3)), url("../images/home-hero-bg.jpg");
   background-size: cover;
