@@ -58,12 +58,21 @@ a {
   font-size: 1.8rem;
   text-decoration: none;
 }
-a:hover, a:active, a:visited {
-  color: inherit;
+
+ a:hover,
+  a:active,
+  a:visited {
+    color: inherit;
+  }
+
+
+.header-searchbar .links, .links:hover, .links:active, .links:visited {
+  font-size: 1.8rem;
+  color: #000000;
 }
 
-.links {
-  font-size: 1.8rem;
+.footer .links, .links:hover, .links:active, .links:visited{
+  color: #333333;
 }
 
 .fbtn {
@@ -505,6 +514,7 @@ a:hover, a:active, a:visited {
 .product__add-btn {
   background-color: #8bc53f;
   padding: 5px 2.2rem 6px;
+  color: #fff !important;
 }
 .product__add-btn:hover, .product__add-btn:active, .product__add-btn:visited {
   color: #fff;
@@ -515,6 +525,7 @@ a:hover, a:active, a:visited {
 .product__buy-btn {
   background-color: #ffa51e;
   padding: 5px 3.1rem 6px 3.2rem;
+  color: #fff !important;
 }
 .product__buy-btn:hover, .product__buy-btn:active, .product__buy-btn:visited {
   color: #fff;
